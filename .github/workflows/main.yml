@@ -33,3 +33,4 @@ jobs:
         run: |
           git clone https://github.com/$GITHUB_REPOSITORY.git
           cd $(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}')
+          ls -a
