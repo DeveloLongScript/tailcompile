@@ -32,4 +32,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           git clone https://github.com/$GITHUB_REPOSITORY.git
-          cd `echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}`
+          cd $(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}')
